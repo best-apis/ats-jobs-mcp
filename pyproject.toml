@@ -1,0 +1,19 @@
+[project]
+name = "best-apis-ats-jobs-mcp"
+version = "0.1.0"
+description = "MCP server: search 350k+ open jobs from 12,000+ company career sites, daily changes and company hiring signals (via the ATS Jobs Feed Apify Actor)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["mcp>=1.2,<2", "apify-client>=3.0"]
+keywords = ["mcp", "jobs", "greenhouse", "lever", "ashby", "hiring", "apify"]
+
+[project.scripts]
+ats-jobs-mcp = "ats_jobs_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ats_jobs_mcp"]

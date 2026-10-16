@@ -1,0 +1,8 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.best-apis/ats-jobs-mcp",
+  "description": "Search 350k+ open jobs, daily new jobs and company hiring signals from 12,000+ career sites.",
+  "version": "0.1.0",
+  "packages": [{ "registryType": "pypi", "identifier": "best-apis-ats-jobs-mcp", "version": "0.1.0", "transport": { "type": "stdio" },
+    "environmentVariables": [{ "name": "APIFY_TOKEN", "description": "Apify API token", "isRequired": true, "isSecret": true }] }]
+}
